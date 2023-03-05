@@ -1,15 +1,31 @@
 <script lang="ts">
-	import MigrationBanner from '$lib/components/migrationBanner.svelte';
+	import MigrationBanner from '$lib/components/MigrationBanner.svelte';
+	import PageHeader from '$lib/components/PageHeader.svelte';
+
+	import '@fontsource/lexend-deca';
+	import '@mdi/font/css/materialdesignicons.min.css';
+	import '$lib/css/reset.css';
 </script>
 
 <MigrationBanner />
 
-<slot />
+<PageHeader />
+
+<main class="wrapper">
+	<slot />
+</main>
 
 <style>
-	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
-
 	:global(body) {
-		font-family: 'Roboto', sans-serif;
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 16px;
+		color: #fff;
+		background: #111;
+	}
+	:global(.wrapper) {
+		margin: 0 auto;
+		display: grid;
+		width: calc(100% - 50px);
+		max-width: 1140px;
 	}
 </style>
