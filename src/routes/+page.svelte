@@ -1,7 +1,7 @@
 <div class="hero">
 	<div class="text">
-		<h1>We'll be back soon!</h1>
-		<p>We're currently improving the web experience for you. Please check back later.</p>
+		<h1>Get ready for<br />the awesome!</h1>
+		<p>We're working hard to bring you an all new web experience for you. Please check back later.</p>
 	</div>
 	<div class="graphics">
 		<div class="portal2-background" />
