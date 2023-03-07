@@ -42,10 +42,10 @@
 				background-position: center;
 				background-size: cover;
 				aspect-ratio: 1 / 1;
-				-webkit-mask-image: url('$lib/images/logos/strata-icon-ondark-mono.svg');
+				-webkit-mask-image: url('https://branding.stratasource.org/i/strata/icon/ondark/mono.svg');
 				-webkit-mask-repeat: no-repeat;
 				-webkit-mask-position: center;
-				mask-image: url('$lib/images/logos/strata-icon-ondark-mono.svg');
+				mask-image: url('https://branding.stratasource.org/i/strata/icon/ondark/mono.svg');
 				mask-repeat: no-repeat;
 				mask-position: center;
 			}
