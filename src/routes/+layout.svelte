@@ -1,5 +1,5 @@
 <script lang="ts">
-	import MigrationBanner from '$lib/components/MigrationBanner.svelte';
+	import MigrationBanner from '$lib/components/migrationBanner.svelte';
 	import PageHeader from '$lib/components/PageHeader.svelte';
 
 	import '@fontsource/lexend-deca';
@@ -21,6 +21,7 @@
 		font-size: 16px;
 		color: #fff;
 		background: #111;
+		max-width: 100vw;
 	}
 	:global(.wrapper) {
 		margin: 0 auto;

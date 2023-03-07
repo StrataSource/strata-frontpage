@@ -4,8 +4,10 @@
 
 <div class="migration-banner">
 	<img src={StrataIconOnDarkMono} alt="Strata Icon" />
-	<span>Chaos Initiative is now Strata Source!</span>
-	<a href="/hello-from-strata">Read the announcement</a>
+	<div class="message">
+		<span>Chaos Initiative is now Strata Source!</span>
+		<a href="/hello-from-strata">Read the announcement</a>
+	</div>
 </div>
 
 <style lang="scss">
@@ -13,22 +15,37 @@
 		background: #a32b2b;
 		color: #fff;
 		width: 100%;
-		padding: 15px;
+		padding: 1rem;
+		text-align: center;
+		gap: .5rem;
 		display: flex;
+		align-items: center;
 		justify-content: center;
-		gap: 15px;
 
 		& img {
 			height: 20px;
+			margin-top: auto;
+			margin-bottom: auto;
 		}
+
+		@media only screen and (max-width: 400px) {
+			& img {
+				display: none;
+			}
+		}
+
 		& a {
 			color: #fff;
 			font-weight: bold;
 			transition: 0.2s ease-in-out all;
+			display: inline-block;
 
 			&:hover {
 				opacity: 0.6;
 			}
+		}
+		& span {
+			display: inline-block;
 		}
 	}
 </style>
