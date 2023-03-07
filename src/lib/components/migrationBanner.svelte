@@ -1,9 +1,8 @@
 <script lang="ts">
-	import StrataIconOnDarkMono from '$lib/images/logos/strata-icon-ondark-mono.svg';
 </script>
 
 <div class="migration-banner">
-	<img src={StrataIconOnDarkMono} alt="Strata Icon" />
+	<img src="https://branding.stratasource.org/i/strata/icon/ondark/mono.svg" alt="Strata Icon" />
 	<div class="message">
 		<span>Chaos Initiative is now Strata Source!</span>
 		<a href="/hello-from-strata">Read the announcement</a>
@@ -17,7 +16,7 @@
 		width: 100%;
 		padding: 1rem;
 		text-align: center;
-		gap: .5rem;
+		gap: 0.5rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
