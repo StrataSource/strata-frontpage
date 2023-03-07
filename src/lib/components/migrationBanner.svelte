@@ -5,7 +5,7 @@
 	<img src="https://branding.stratasource.org/i/strata/icon/ondark/mono.svg" alt="Strata Icon" />
 	<div class="message">
 		<span>Chaos Initiative is now Strata Source!</span>
-		<a href="/hello-from-strata">Read the announcement</a>
+		<a href="/the-future-of-chaos">Read the announcement</a>
 	</div>
 </div>
 
