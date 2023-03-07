@@ -12,7 +12,6 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.5.0",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
@@ -30,6 +29,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/lexend-deca": "^4.5.14",
-		"@mdi/font": "^7.1.96"
+		"@mdi/font": "^7.1.96",
+		"@sveltejs/adapter-static": "^2.0.1"
 	}
 }
