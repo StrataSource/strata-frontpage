@@ -5,7 +5,26 @@
 	import '@fontsource/lexend-deca';
 	import '@mdi/font/css/materialdesignicons.min.css';
 	import '$lib/css/reset.css';
+	import Spinner from '$lib/components/spinner.svelte';
+	import { navigating } from '$app/stores';
+	import { onMount } from 'svelte';
+
+	let loader: HTMLElement;
+
+	onMount(() => {
+		navigating.subscribe((state) => {
+			if (state) {
+				loader.classList.remove('hidden');
+			} else {
+				loader.classList.add('hidden');
+			}
+		});
+	});
 </script>
+
+<div class="loader" bind:this={loader}>
+	<Spinner />
+</div>
 
 <MigrationBanner />
 
@@ -15,7 +34,7 @@
 	<slot />
 </main>
 
-<style>
+<style lang="scss">
 	:global(body) {
 		font-family: 'Lexend Deca', sans-serif;
 		font-size: 16px;
@@ -28,5 +47,26 @@
 		display: grid;
 		width: calc(100% - 50px);
 		max-width: 1140px;
+	}
+
+	.loader {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		width: 100vw;
+		background: #222;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 9999;
+
+		transition: 100ms;
+
+		&:global(.hidden) {
+			opacity: 0;
+			pointer-events: none;
+		}
 	}
 </style>
