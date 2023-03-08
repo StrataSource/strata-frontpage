@@ -8,8 +8,7 @@
 		xmlns:xlink="http://www.w3.org/1999/xlink"
 		x="0px"
 		y="0px"
-		viewBox="0 0 42.66388 46.12053"
-		xml:space="preserve"
+		viewBox="-30 -30 102.66388 106.12053"
 	>
 		<g>
 			<path
@@ -32,8 +31,7 @@
 		xmlns:xlink="http://www.w3.org/1999/xlink"
 		x="0px"
 		y="0px"
-		viewBox="0 0 42.66388 46.12053"
-		xml:space="preserve"
+		viewBox="-30 -30 102.66388 106.12053"
 	>
 		<g>
 			<path
@@ -90,21 +88,27 @@
 		stroke: white;
 		stroke-opacity: 0.5;
 
-		margin: 3rem;
 
 		& svg {
-			height: 9rem;
-			width: 9rem;
+			height: 18rem;
+			width: 18rem;
 		}
 
 		& .animated {
-			filter: drop-shadow(0px 0px 10px white);
 			stroke-dasharray: 48.28;
 			stroke-dashoffset: 0;
 			stroke-width: 0.1rem;
 			stroke-opacity: 1;
 			position: absolute;
 			animation: linear outline infinite 2.5s;
+			& .st0 {
+				filter: drop-shadow(0px 0px 5px #f0413c);
+				stroke: #f0413c;
+			}
+			& .st1 {
+				filter: drop-shadow(0px 0px 5px white);
+				stroke: white;
+			}
 		}
 	}
 	@keyframes outline {
