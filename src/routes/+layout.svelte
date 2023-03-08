@@ -55,7 +55,9 @@
 		left: 0;
 		height: 100vh;
 		width: 100vw;
-		background: #222;
+		background: #111;
+
+		overflow: hidden;
 
 		display: flex;
 		align-items: center;
