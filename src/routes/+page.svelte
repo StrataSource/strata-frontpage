@@ -1,7 +1,15 @@
+<script>
+	import Meta from '$lib/components/Meta.svelte';
+</script>
+
+<Meta title="Test" />
+
 <div class="hero">
 	<div class="text">
 		<h1>Get ready for<br />the awesome!</h1>
-		<p>We're working hard to bring you an all new web experience for you. Please check back later.</p>
+		<p>
+			We're working hard to bring you an all new web experience for you. Please check back later.
+		</p>
 	</div>
 	<div class="graphics">
 		<div class="portal2-background" />
