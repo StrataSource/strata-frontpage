@@ -21,6 +21,9 @@
 			navIcon.classList.add('mdi-menu');
 		}
 	}
+
+	import githubIcon from '$lib/images/logos/github.svg';
+	import twitterIcon from '$lib/images/logos/twitter.svg';
 </script>
 
 <header>
@@ -51,7 +54,14 @@
 					rel="noreferrer">Qt Source Code</a
 				>
 
-				<div class="socials" />
+				<div class="socials link">
+					<a href="https://github.com/StrataSource" target="_blank" rel="noreferrer"
+						><img src={githubIcon} alt="GitHub" /></a
+					>
+					<a href="https://twitter.com/StrataSource" target="_blank" rel="noreferrer"
+						><img src={twitterIcon} alt="Twitter" /></a
+					>
+				</div>
 			</nav>
 		</div>
 	</div>
@@ -84,6 +94,14 @@
 			& nav {
 				display: flex;
 				gap: 25px;
+
+				& .socials {
+					display: flex;
+					align-items: center;
+					filter: invert(1);
+					height: 1rem;
+					gap: 25px;
+				}
 
 				& a {
 					font-size: 14px;
@@ -119,12 +137,16 @@
 						display: block;
 						width: 100%;
 						text-align: center;
-						padding: 1rem;
+						padding: 0.75rem;
+					}
+
+					& .socials {
+						height: auto;
 					}
 				}
 
 				& nav:global(.active) {
-					max-height: 50vh;
+					max-height: 90vh;
 					overflow-y: auto;
 				}
 			}
