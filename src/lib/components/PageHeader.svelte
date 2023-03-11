@@ -1,4 +1,26 @@
 <script lang="ts">
+	import { navigating } from '$app/stores';
+
+	let nav: HTMLElement;
+	let navIcon: HTMLElement;
+
+	navigating.subscribe((isNav) => {
+		if (isNav) {
+			nav.classList.add('active');
+			toggleMenu();
+		}
+	});
+
+	function toggleMenu() {
+		nav.classList.toggle('active');
+		if (nav.classList.contains('active')) {
+			navIcon.classList.remove('mdi-menu');
+			navIcon.classList.add('mdi-close');
+		} else {
+			navIcon.classList.remove('mdi-close');
+			navIcon.classList.add('mdi-menu');
+		}
+	}
 </script>
 
 <header>
@@ -12,19 +34,26 @@
 			</a>
 		</div>
 
-		<nav>
-			<a href="/">Home</a>
-			<!--<a href="/news">News</a>-->
-			<!-- svelte-ignore security-anchor-rel-noreferrer -->
-			<a href="https://stratasource.github.io/Wiki/" target="_blank">Wiki</a>
-			<a
-				href="https://github.com/StrataSource/qtbase/archive/refs/heads/chaos.zip"
-				target="_blank"
-				rel="noreferrer">Qt Source Code</a
-			>
+		<button class="menu-opener" on:click={toggleMenu}>
+			<span bind:this={navIcon} class="mdi mdi-menu" />
+		</button>
 
-			<div class="socials" />
-		</nav>
+		<div>
+			<nav bind:this={nav}>
+				<a class="link" href="/">Home</a>
+				<!--<a href="/news">News</a>-->
+				<!-- svelte-ignore security-anchor-rel-noreferrer -->
+				<a class="link" href="https://stratasource.github.io/Wiki/" target="_blank">Wiki</a>
+				<a
+					class="link"
+					href="https://github.com/StrataSource/qtbase/archive/refs/heads/chaos.zip"
+					target="_blank"
+					rel="noreferrer">Qt Source Code</a
+				>
+
+				<div class="socials" />
+			</nav>
+		</div>
 	</div>
 </header>
 
@@ -39,6 +68,17 @@
 
 			& .logo-wrapper {
 				width: fit-content;
+			}
+
+			& .menu-opener {
+				font-size: 1rem;
+				color: white;
+				background: none;
+				border: none;
+				cursor: pointer;
+				display: none;
+				scale: 3;
+				line-height: 1;
 			}
 
 			& nav {
@@ -56,6 +96,36 @@
 					&:hover {
 						opacity: 0.6;
 					}
+				}
+			}
+
+			@media only screen and (max-width: 700px) {
+				& .menu-opener {
+					display: block;
+				}
+
+				& nav {
+					max-height: 0;
+					display: block;
+					background: #222222;
+					position: absolute;
+					left: 0;
+					width: 100%;
+					overflow: hidden;
+
+					transition: 500ms;
+
+					& .link {
+						display: block;
+						width: 100%;
+						text-align: center;
+						padding: 1rem;
+					}
+				}
+
+				& nav:global(.active) {
+					max-height: 50vh;
+					overflow-y: auto;
 				}
 			}
 		}
