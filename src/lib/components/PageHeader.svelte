@@ -47,12 +47,6 @@
 				<!--<a href="/news">News</a>-->
 				<!-- svelte-ignore security-anchor-rel-noreferrer -->
 				<a class="link" href="https://stratasource.github.io/Wiki/" target="_blank">Wiki</a>
-				<a
-					class="link"
-					href="https://github.com/StrataSource/qtbase/archive/refs/heads/chaos.zip"
-					target="_blank"
-					rel="noreferrer">Qt Source Code</a
-				>
 
 				<div class="socials link">
 					<a href="https://github.com/StrataSource" target="_blank" rel="noreferrer"
@@ -153,7 +147,7 @@
 		}
 
 		& img {
-			height: 35px;
+			height: 2rem;
 		}
 	}
 </style>
