@@ -1,6 +1,7 @@
 <script lang="ts">
 	import MigrationBanner from '$lib/components/migrationBanner.svelte';
 	import PageHeader from '$lib/components/PageHeader.svelte';
+	import Footer from '$lib/components/PageFooter.svelte';
 
 	import '@fontsource/lexend-deca';
 	import '@mdi/font/css/materialdesignicons.min.css';
@@ -33,6 +34,8 @@
 <main class="wrapper">
 	<slot />
 </main>
+
+<Footer />
 
 <style lang="scss">
 	:global(body) {
