@@ -2,7 +2,9 @@
 	import Meta from '$lib/components/Meta.svelte';
 </script>
 
-<Meta title="Test" />
+<Meta
+	description="Introducing Strata Source, the game changer for Source modding."
+/>
 
 <div class="hero">
 	<div class="text">
