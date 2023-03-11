@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 
-	export let title = 'Strata Source';
+	export let title = 'Strata';
 	export let description = 'Trust us, we have cool stuff';
 	export let theme = 'default';
 
@@ -13,7 +13,7 @@
     <meta name="description" content={description}>
 	<meta property="og:title" content={title} />
 	<meta property="og:description" content={description} />
-	<meta property="og:site_name" content="Strata Source" />
+	<meta property="og:site_name" content="Strata" />
 	<meta property="og:url" content={$page.url.href} />
 	<meta
 		property="og:image"
