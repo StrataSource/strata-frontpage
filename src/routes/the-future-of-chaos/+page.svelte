@@ -42,17 +42,13 @@
 		The Strata Team
 	</div>
 </PostText>
-<PostImage src="https://source.unsplash.com/random?dark" mode="parallax" />
-<PostText>
-	<div>This would be an excelent place for some Q&A after we finish this</div>
-</PostText>
 
 <style lang="scss">
 	.hero {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin-bottom: 50px;
+		margin-bottom: calc(50px + 1rem);
 
 		& .icon {
 			height: 5rem;
