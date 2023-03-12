@@ -3,7 +3,8 @@
 </script>
 
 <Meta
-	description="Introducing Strata Source, the game changer for Source modding."
+	title="Welcome to Strata"
+	description="Introducing Strata Source, an extended version of the Source game engine."
 />
 
 <div class="hero">

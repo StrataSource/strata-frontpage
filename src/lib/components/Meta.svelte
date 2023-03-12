@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>{title} - Strata Source</title>
+	<title>{title} - Strata</title>
     <meta name="description" content={description}>
 	<meta property="og:title" content={title} />
 	<meta property="og:description" content={description} />

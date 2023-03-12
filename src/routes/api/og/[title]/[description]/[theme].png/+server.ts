@@ -13,7 +13,7 @@ export const GET = (({ params }) => {
 
 	const icon = new Image();
 	icon.src = fs.readFileSync('./og_assets/brand/icon.png');
-	context.drawImage(icon, canvas.height * 0.95, 0, canvas.height, canvas.height);
+	context.drawImage(icon, canvas.width * 0.58, 0, canvas.height, canvas.height);
 
 	context.globalCompositeOperation = 'source-in';
 
