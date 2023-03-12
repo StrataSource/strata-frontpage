@@ -19,6 +19,7 @@
 		property="og:image"
 		content="https://stratasource.org/api/og/{title}/{description}/{theme}.png"
 	/>
+	<meta name="theme-color" content="#f0413c" />
 </svelte:head>
 
 <!-- Funky HTML to make the prerender work -->
