@@ -87,14 +87,14 @@
 
 			& nav {
 				display: flex;
-				gap: 25px;
+				gap: 1rem;
 
 				& .socials {
 					display: flex;
 					align-items: center;
 					filter: invert(1);
 					height: 1rem;
-					gap: 25px;
+					gap: 1rem;
 				}
 
 				& a {
@@ -125,7 +125,7 @@
 					width: 100%;
 					overflow: hidden;
 
-					transition: 500ms;
+					transition: 250ms linear;
 
 					& .link {
 						display: block;
@@ -135,12 +135,14 @@
 					}
 
 					& .socials {
+						display: flex;
+						justify-content: center;
 						height: auto;
 					}
 				}
 
 				& nav:global(.active) {
-					max-height: 90vh;
+					max-height: 30vh;
 					overflow-y: auto;
 				}
 			}
