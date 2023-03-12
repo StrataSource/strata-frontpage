@@ -55,6 +55,7 @@
 		margin-bottom: 1rem;
 		transition: 200ms;
 		display: block;
+		width: fit-content;
 	}
 	.logo img {
 		height: 2rem;
