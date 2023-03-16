@@ -51,43 +51,11 @@
 </div>
 
 <style lang="scss">
-	.spinner-drop {
-		mask-image: url(https://branding.stratasource.org/i/strata/icon/ondark/mono.svg);
-		mask-repeat: no-repeat;
-		mask-position: center;
-		-webkit-mask-image: url(https://branding.stratasource.org/i/strata/icon/ondark/mono.svg);
-		-webkit-mask-repeat: no-repeat;
-		-webkit-mask-position: center;
-
-		background-image: linear-gradient(0deg, #fff 50%, #f0413c 50%);
-
-		height: 9rem;
-		width: 9rem;
-
-		animation: spin 2s infinite ease-out;
-
-		margin: 3rem;
-	}
-	@keyframes spin {
-		0% {
-			background-position-y: 0rem;
-		}
-		70% {
-			background-position-y: 4.5rem;
-			transform: rotate(0deg);
-		}
-		100% {
-			transform: rotate(180deg);
-			background-position-y: 4.5rem;
-		}
-	}
-
 	.spinner-outline {
 		fill: transparent;
 		stroke-width: 0.02rem;
 		stroke: white;
 		stroke-opacity: 0.5;
-
 
 		& svg {
 			height: 18rem;
