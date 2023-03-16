@@ -23,23 +23,25 @@
 
 <PostText>
 	<div>
-		Hey everyone,
-		<br />
-		We are excited to announce that Chaos Initiative is evolving into something even greater! As we continue
-		to develop our own branch of the Source Engine, we have decided to rebrand ourselves as
-		<strong>Strata</strong>. This new name represents our hard work digging deep through the Source
-		Engine's code.
-		<br />
-		And while our name may be changing, we want to reassure you that our passion for building amazing
-		mods remains stronger than ever. We believe that the future of gaming is built on collaboration and
-		innovation, and we are excited to be a part of that future. With Strata, we will continue to push
-		the boundaries of what is possible, and we look forward to sharing our journey with all of you.
-		<br />
-		Thank you for your support and for being a part of this incredible community.
-		<br /><br />
-		Sincerely,
-		<br />
-		The Strata Team
+		<p>Hey everyone,</p>
+		<p>
+			We are excited to announce that Chaos Initiative is evolving into something even greater! As
+			we continue to develop our own branch of the Source Engine, we have decided to rebrand
+			ourselves as
+			<strong>Strata</strong>. This new name represents our hard work digging deep through the
+			Source Engine's code.
+		</p>
+		<p>
+			And while our name may be changing, we want to reassure you that our passion for building
+			amazing mods remains stronger than ever. We believe that the future of gaming is built on
+			collaboration and innovation, and we are excited to be a part of that future. With Strata, we
+			will continue to push the boundaries of what is possible, and we look forward to sharing our
+			journey with all of you.
+		</p>
+		<p>Thank you for your support and for being a part of this incredible community.</p>
+		<p />
+		<p>Sincerely,</p>
+		<p>The Strata Team</p>
 	</div>
 </PostText>
 

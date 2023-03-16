@@ -8,22 +8,11 @@
 	import '$lib/css/reset.css';
 	import Spinner from '$lib/components/spinner.svelte';
 	import { navigating } from '$app/stores';
-	import { onMount } from 'svelte';
 
 	let loader: HTMLElement;
-
-	onMount(() => {
-		navigating.subscribe((state) => {
-			if (state) {
-				loader.classList.remove('hidden');
-			} else {
-				loader.classList.add('hidden');
-			}
-		});
-	});
 </script>
 
-<div class="loader" bind:this={loader}>
+<div class="loader" bind:this={loader} class:hidden={!$navigating}>
 	<Spinner />
 </div>
 
@@ -69,7 +58,7 @@
 
 		transition: 100ms;
 
-		&:global(.hidden) {
+		&.hidden {
 			opacity: 0;
 			pointer-events: none;
 		}

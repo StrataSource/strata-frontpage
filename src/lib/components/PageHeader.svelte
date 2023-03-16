@@ -1,25 +1,11 @@
 <script lang="ts">
 	import { navigating } from '$app/stores';
 
-	let nav: HTMLElement;
+	let nav: boolean;
 	let navIcon: HTMLElement;
 
-	navigating.subscribe((isNav) => {
-		if (isNav) {
-			nav.classList.add('active');
-			toggleMenu();
-		}
-	});
-
-	function toggleMenu() {
-		nav.classList.toggle('active');
-		if (nav.classList.contains('active')) {
-			navIcon.classList.remove('mdi-menu');
-			navIcon.classList.add('mdi-close');
-		} else {
-			navIcon.classList.remove('mdi-close');
-			navIcon.classList.add('mdi-menu');
-		}
+	$: if ($navigating) {
+		nav = false;
 	}
 
 	import githubIcon from '$lib/images/logos/github.svg';
@@ -37,12 +23,12 @@
 			</a>
 		</div>
 
-		<button class="menu-opener" on:click={toggleMenu}>
-			<span bind:this={navIcon} class="mdi mdi-menu" />
+		<button class="menu-opener" on:click={() => (nav = !nav)}>
+			<span bind:this={navIcon} class="mdi" class:mdi-menu={!nav} class:mdi-close={nav} />
 		</button>
 
 		<div>
-			<nav bind:this={nav}>
+			<nav class:active={nav}>
 				<a class="link" href="/">Home</a>
 				<!--<a href="/news">News</a>-->
 				<!-- svelte-ignore security-anchor-rel-noreferrer -->
