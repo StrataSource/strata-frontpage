@@ -13,7 +13,9 @@
 	class="card"
 	{href}
 	target={href.startsWith('/') ? '_self' : '_blank'}
-	style="--theme: {theme};--themeTransparent: {theme}44; --bg: url({background})"
+	style:--theme={theme}
+	style:--themeTransparent="{theme}44"
+	style:--bg="url({background})"
 >
 	<div class="title">{title}</div>
 	<div class="description">{description}</div>
@@ -45,7 +47,7 @@
 
 	.title {
 		font-size: 2rem;
-        margin-bottom: 0.5rem;
+		margin-bottom: 0.5rem;
 	}
 
 	.cta {
