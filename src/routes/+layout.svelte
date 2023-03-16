@@ -6,6 +6,7 @@
 	import '@fontsource/lexend-deca';
 	import '@mdi/font/css/materialdesignicons.min.css';
 	import '$lib/css/reset.css';
+	import '$lib/css/app.scss';
 	import Spinner from '$lib/components/spinner.svelte';
 	import { navigating } from '$app/stores';
 
