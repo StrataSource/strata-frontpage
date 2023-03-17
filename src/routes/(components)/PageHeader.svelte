@@ -10,7 +10,7 @@
 
 	import githubIcon from '$lib/images/logos/github.svg';
 	import twitterIcon from '$lib/images/logos/twitter.svg';
-	import MainContainer from './MainContainer.svelte';
+	import MainContainer from '../../lib/components/MainContainer.svelte';
 </script>
 
 <header>
