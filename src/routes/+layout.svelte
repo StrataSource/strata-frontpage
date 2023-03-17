@@ -9,6 +9,7 @@
 	import '$lib/css/app.scss';
 	import Spinner from '$lib/components/spinner.svelte';
 	import { navigating } from '$app/stores';
+	import MainContainer from '$lib/components/MainContainer.svelte';
 
 	let loader: HTMLElement;
 </script>
@@ -21,27 +22,13 @@
 
 <PageHeader />
 
-<main class="wrapper">
+<MainContainer>
 	<slot />
-</main>
+</MainContainer>
 
 <Footer />
 
 <style lang="scss">
-	:global(body) {
-		font-family: 'Lexend Deca', sans-serif;
-		font-size: 16px;
-		color: #fff;
-		background: #111;
-		max-width: 100vw;
-	}
-	:global(.wrapper) {
-		margin: 0 auto;
-		display: grid;
-		width: calc(100% - 50px);
-		max-width: 1140px;
-	}
-
 	.loader {
 		position: fixed;
 		top: 0;

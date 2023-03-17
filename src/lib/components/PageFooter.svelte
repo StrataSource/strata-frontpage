@@ -1,10 +1,11 @@
 <script lang="ts">
 	import githubIcon from '$lib/images/logos/github.svg';
 	import twitterIcon from '$lib/images/logos/twitter.svg';
+	import MainContainer from './MainContainer.svelte';
 </script>
 
 <div class="footer">
-	<div class="wrapper">
+	<MainContainer>
 		<div class="inner">
 			<a href="/" class="logo">
 				<img src="https://branding.stratasource.org/i/strata/logo/ondark/mono.svg" alt="Strata" />
@@ -20,7 +21,6 @@
 					rel="noreferrer">Qt Source Code</a
 				>
 			</nav>
-
 			<nav class="socials">
 				<a href="https://github.com/StrataSource" target="_blank" rel="noreferrer"
 					><img src={githubIcon} alt="GitHub" /></a
@@ -30,24 +30,13 @@
 				>
 			</nav>
 		</div>
-	</div>
+	</MainContainer>
 </div>
 
 <style lang="scss">
 	.footer {
 		margin-top: 2rem;
 		margin-bottom: 2rem;
-	}
-	.wrapper {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 50px;
-		align-items: center;
-	}
-	@media only screen and (max-width: 900px) {
-		.wrapper {
-			grid-template-columns: 1fr;
-		}
 	}
 
 	.logo {
