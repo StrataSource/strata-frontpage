@@ -10,10 +10,11 @@
 
 	import githubIcon from '$lib/images/logos/github.svg';
 	import twitterIcon from '$lib/images/logos/twitter.svg';
+	import MainContainer from './MainContainer.svelte';
 </script>
 
 <header>
-	<div class="wrapper">
+	<MainContainer>
 		<div class="logo-wrapper">
 			<a href="/">
 				<img
@@ -44,98 +45,87 @@
 				</div>
 			</nav>
 		</div>
-	</div>
+	</MainContainer>
 </header>
 
 <style lang="scss">
-	header {
-		padding: 50px 0px;
+	.logo-wrapper {
+		width: fit-content;
+	}
 
-		& .wrapper {
-			grid-template-columns: 1fr auto;
-			gap: 15px;
+	img {
+		height: 2rem;
+	}
+
+	.menu-opener {
+		font-size: 1rem;
+		color: white;
+		background: none;
+		border: none;
+		cursor: pointer;
+		display: none;
+		line-height: 1;
+		font-size: 3rem;
+	}
+
+	nav {
+		display: flex;
+		gap: 1rem;
+
+		& .socials {
+			display: flex;
 			align-items: center;
+			filter: invert(1);
+			height: 1rem;
+			gap: 1rem;
+		}
 
-			& .logo-wrapper {
-				width: fit-content;
+		& a {
+			font-size: 14px;
+			color: #fff;
+			text-decoration: none;
+			font-weight: bold;
+			text-transform: uppercase;
+			transition: 0.2s ease-in-out all;
+
+			&:hover {
+				opacity: 0.6;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 700px) {
+		.menu-opener {
+			display: block;
+		}
+
+		nav {
+			max-height: 0;
+			display: block;
+			background: #222222;
+			position: absolute;
+			left: 0;
+			width: 100%;
+			overflow: hidden;
+
+			transition: 250ms linear;
+
+			& .link {
+				display: block;
+				width: 100%;
+				text-align: center;
+				padding: 0.75rem;
 			}
 
-			& .menu-opener {
-				font-size: 1rem;
-				color: white;
-				background: none;
-				border: none;
-				cursor: pointer;
-				display: none;
-				scale: 3;
-				line-height: 1;
-			}
-
-			& nav {
+			& .socials {
 				display: flex;
-				gap: 1rem;
-
-				& .socials {
-					display: flex;
-					align-items: center;
-					filter: invert(1);
-					height: 1rem;
-					gap: 1rem;
-				}
-
-				& a {
-					font-size: 14px;
-					color: #fff;
-					text-decoration: none;
-					font-weight: bold;
-					text-transform: uppercase;
-					transition: 0.2s ease-in-out all;
-
-					&:hover {
-						opacity: 0.6;
-					}
-				}
-			}
-
-			@media only screen and (max-width: 700px) {
-				& .menu-opener {
-					display: block;
-				}
-
-				& nav {
-					max-height: 0;
-					display: block;
-					background: #222222;
-					position: absolute;
-					left: 0;
-					width: 100%;
-					overflow: hidden;
-
-					transition: 250ms linear;
-
-					& .link {
-						display: block;
-						width: 100%;
-						text-align: center;
-						padding: 0.75rem;
-					}
-
-					& .socials {
-						display: flex;
-						justify-content: center;
-						height: auto;
-					}
-				}
-
-				& nav:global(.active) {
-					max-height: 30vh;
-					overflow-y: auto;
-				}
+				justify-content: center;
+				height: auto;
 			}
 		}
 
-		& img {
-			height: 2rem;
+		nav:global(.active) {
+			max-height: 30vh;
 		}
 	}
 </style>
