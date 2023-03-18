@@ -2,7 +2,7 @@
 	export let src: string;
 	export let description: string = '';
 
-	export let mode = 'static';
+	export let mode: 'static' | 'parallax' = 'static';
 </script>
 
 {#if mode == 'static'}
