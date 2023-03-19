@@ -8,9 +8,12 @@
 	<MainContainer>
 		<div class="inner">
 			<a href="/" class="logo">
-				<img src="https://branding.stratasource.org/i/strata/logo/ondark/mono.svg" alt="Strata" />
+				<img
+					src="https://branding.stratasource.org/i/strata-source/logo/ondark/mono.svg"
+					alt="Strata"
+				/>
 			</a>
-			<div>©2023 Strata</div>
+			<div>©2023 Strata Source</div>
 		</div>
 		<div class="inner">
 			<nav>
