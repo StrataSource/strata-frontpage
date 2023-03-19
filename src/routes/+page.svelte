@@ -2,16 +2,14 @@
 	import Meta from '$lib/components/Meta.svelte';
 </script>
 
-<Meta
-	title="Welcome to Strata"
-	description="Introducing Strata Source, an extended version of the Source game engine."
-/>
+<Meta description="Introducing Strata Source, the game changer for Source modding." />
 
 <div class="hero">
 	<div class="text">
-		<h1>Get ready for<br />the awesome!</h1>
+		<h1>Introducing<br />Strata Source</h1>
 		<p>
-			We're working hard to bring you an all new web experience for you. Please check back later.
+			A community-made branch of the Source engine emphasing modern features and development
+			practices
 		</p>
 	</div>
 	<div class="graphics">
