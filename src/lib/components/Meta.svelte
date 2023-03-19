@@ -1,19 +1,25 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 
-	export let title = 'Strata';
-	export let description = 'Trust us, we have cool stuff';
+	export let title = '';
+	export let description =
+		'A community-made branch of the Source engine emphasing modern features and development practices';
 	export let theme = 'default';
 
 	let img: HTMLImageElement;
 </script>
 
 <svelte:head>
-	<title>{title} - Strata</title>
-    <meta name="description" content={description}>
-	<meta property="og:title" content={title} />
+	{#if title == ''}
+		<title>Strata Source</title>
+		<meta property="og:title" content="Home" />
+	{:else}
+		<title>{title} - Strata Source</title>
+		<meta property="og:title" content={title} />
+	{/if}
+	<meta name="description" content={description} />
 	<meta property="og:description" content={description} />
-	<meta property="og:site_name" content="Strata" />
+	<meta property="og:site_name" content="Strata Source" />
 	<meta property="og:url" content={$page.url.href} />
 	<meta
 		property="og:image"
