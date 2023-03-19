@@ -18,7 +18,7 @@
 		<div class="logo-wrapper">
 			<a href="/">
 				<img
-					src="https://branding.stratasource.org/i/strata/logo/ondark/color.svg"
+					src="https://branding.stratasource.org/i/strata-source/logo/ondark/color.svg"
 					alt="Strata Source Logo"
 				/>
 			</a>
@@ -91,6 +91,10 @@
 			&:hover {
 				opacity: 0.6;
 			}
+
+			& img {
+				height: 32px;
+			}
 		}
 	}
 
@@ -121,6 +125,10 @@
 				display: flex;
 				justify-content: center;
 				height: auto;
+			}
+
+			& img {
+				height: 2.5rem;
 			}
 		}
 
