@@ -23,7 +23,9 @@
 	<meta property="og:url" content={$page.url.href} />
 	<meta
 		property="og:image"
-		content="https://stratasource.org/api/og/{title}/{description}/{theme}.png"
+		content="https://stratasource.org/api/og/{title == ''
+			? 'Strata Source'
+			: title}/{description}/{theme}.png"
 	/>
 	<meta name="theme-color" content="#f0413c" />
 </svelte:head>
@@ -32,9 +34,10 @@
 <img
 	bind:this={img}
 	on:load={img.remove}
-	src="/api/og/{title}/{description}/{theme}.png"
+	src="/api/og/{title == '' ? 'Strata Source' : title}/{description}/{theme}.png"
 	alt="Preview"
 />
+
 <style>
 	img {
 		height: 1px;
