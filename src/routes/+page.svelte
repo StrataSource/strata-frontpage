@@ -9,7 +9,7 @@
 		<h1>Introducing<br />Strata Source</h1>
 		<p>
 			A community-made branch of the Source engine emphasing modern features and development
-			practices
+			practices.
 		</p>
 	</div>
 	<div class="graphics">
