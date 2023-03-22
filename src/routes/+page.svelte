@@ -17,7 +17,7 @@
 	</div>
 </div>
 
-<div class="faq">
+<div id="faq" class="faq">
 	<div class="title">
 		FAQ
 		<span class="tint" aria-hidden="true">FAQ</span>
