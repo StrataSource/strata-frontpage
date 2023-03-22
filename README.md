@@ -1,22 +1,17 @@
-# create-svelte
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+# Strata Frontpage
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+A small frontpage site for stratasouce.org using Svelte and SvelteKit.
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+1. Install dependencies with 
+
+```bash
+npm install
+```
+
+2. Launch a development server with
 
 ```bash
 npm run dev
@@ -27,7 +22,7 @@ npm run dev -- --open
 
 ## Building
 
-To create a production version of your app:
+To create a production build of the app:
 
 ```bash
 npm run build
@@ -35,4 +30,6 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Contributing
+
+Development on this repository is primarily done by Strata Source team members. If you'd like to make change, please make an issue first and wait for feedback. 
