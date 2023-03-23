@@ -224,9 +224,58 @@
 		}
 	}
 
-	@media only screen and (max-width: 900px) {
+	@media only screen and (max-width: 768px) {
 		.hero {
 			grid-template-columns: 1fr;
+			gap: 16px;
+
+			& .graphics {
+				& .portal2-background {
+					max-height: 300px;
+				}
+			}
+		}
+		.faq {
+			width: 100%;
+			margin-top: 8rem;
+			margin-bottom: 0;
+			padding-bottom: 1rem;
+
+			$padding-inline: 1rem;
+			$polygon-height: 1.5rem;
+			$title-offset: 3.5rem;
+
+			padding-inline: $padding-inline;
+
+			&::before {
+				clip-path: polygon(0 $polygon-height, 100% 0, 100% 100%, 0 100%);
+			}
+
+			& .title {
+				$offset: 3rem;
+				transform: translateY(#{-$title-offset});
+				margin-bottom: -$title-offset;
+
+				& span:not(.tint) {
+					clip-path: polygon(
+						0 0,
+						100% 0,
+						calc(100% + #{$padding-inline}) $title-offset,
+						-$padding-inline $title-offset + $polygon-height
+					);
+				}
+			}
+
+			& h2 {
+				font-size: 2rem;
+
+				margin-inline: 1rem;
+			}
+
+			& p {
+				// When screen is super low width, `left` feels much easier to read
+				text-align: left;
+			}
 		}
 	}
 </style>
