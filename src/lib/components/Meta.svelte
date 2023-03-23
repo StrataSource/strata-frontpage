@@ -27,6 +27,7 @@
 			? 'Strata Source'
 			: title}/{description}/{theme}.png"
 	/>
+	<meta name="twitter:card" content="summary_large_image">
 	<meta name="theme-color" content="#f0413c" />
 </svelte:head>
 
