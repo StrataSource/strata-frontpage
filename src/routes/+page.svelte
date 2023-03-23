@@ -132,7 +132,7 @@
 			& .portal2-background {
 				width: 80%;
 				height: 80%;
-				background: url('$lib/images/backgrounds/p2.jpg');
+				background: url('$lib/images/backgrounds/blend.jpg');
 				background-position: center;
 				background-size: cover;
 				aspect-ratio: 1 / 1;
