@@ -123,6 +123,7 @@
 				line-height: 1.5em;
 			}
 		}
+
 		& .graphics {
 			display: flex;
 			justify-content: center;
@@ -146,10 +147,12 @@
 	}
 
 	.faq {
+		$padding-inline: 6rem;
+		$polygon-height: 2rem;
+		$title-offset: 3rem;
 		grid-column: 1 / -1;
 		margin-top: 5rem;
 		margin-bottom: 2rem;
-		$padding-inline: 6rem;
 		width: 80%;
 		margin-inline: auto;
 		padding-inline: $padding-inline;
@@ -163,15 +166,14 @@
 			z-index: -1;
 			inset: 0;
 			background-color: #a32b2b;
-			clip-path: polygon(0 2rem, 100% 0, 100% 100%, 0 100%);
+			clip-path: polygon(0 $polygon-height, 100% 0, 100% 100%, 0 100%);
 		}
 
 		& .title {
-			$offset: 3rem;
 			font-weight: 1000;
 			font-size: 8rem;
-			transform: translateY(#{-$offset});
-			margin-bottom: -$offset;
+			transform: translateY(#{-$title-offset});
+			margin-bottom: -$title-offset;
 			color: transparent;
 
 			& > * {
@@ -188,8 +190,8 @@
 					clip-path: polygon(
 						0 0,
 						100% 0,
-						calc(100% + #{$padding-inline}) $offset,
-						-$padding-inline $offset + 2
+						calc(100% + #{$padding-inline}) $title-offset,
+						-$padding-inline $title-offset + $polygon-height
 					);
 				}
 
