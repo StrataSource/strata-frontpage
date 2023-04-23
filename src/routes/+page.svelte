@@ -1,5 +1,11 @@
 <script>
+	import LinkCard from '$lib/components/LinkCard.svelte';
 	import Meta from '$lib/components/Meta.svelte';
+	import { BrandColors } from '$lib/types';
+
+	import p2ceBg from '$lib/images/backgrounds/p2.jpg';
+	import momentumBg from '$lib/images/backgrounds/momentum.png';
+	import p2ceLogo from '$lib/images/logos/p2ce_full_mw.svg';
 </script>
 
 <Meta description="Introducing Strata Source, a game changer for Source modding" />
@@ -15,6 +21,31 @@
 	<div class="graphics">
 		<div class="portal2-background" />
 	</div>
+</div>
+
+<div class="links">
+	<LinkCard
+		theme={BrandColors.P2CE}
+		href="https://portal2communityedition.com"
+		title="Portal 2: Community Edition"
+		logo={p2ceLogo}
+		background={p2ceBg}
+		description="Portal 2, but gooder"
+	/>
+	<LinkCard
+		theme={BrandColors.MOMENTUM}
+		href="https://momentum-mod.org"
+		title="Momentum Mod"
+		background={momentumBg}
+		description="Source games, but fast"
+	/>
+	<LinkCard
+		theme={BrandColors.STRATA}
+		href="/engine"
+		title="Strata Source"
+		background={p2ceBg}
+		description="Pure suffering"
+	/>
 </div>
 
 <div id="faq" class="faq">
@@ -146,6 +177,12 @@
 		}
 	}
 
+	.links {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 0.5rem;
+	}
+
 	.faq {
 		$padding-inline: 6rem;
 		$polygon-height: 2rem;
@@ -234,6 +271,9 @@
 					max-height: 300px;
 				}
 			}
+		}
+		.links {
+			grid-template-columns: 1fr;
 		}
 		.faq {
 			width: 100%;

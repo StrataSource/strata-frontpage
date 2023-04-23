@@ -4,7 +4,8 @@
 	export let theme: BrandColors;
 	export let background: string;
 	export let href: string;
-	export let title: string;
+	export let title: string = '';
+	export let logo: string | undefined = undefined;
 	export let description: string;
 	export let cta = 'Learn more';
 </script>
@@ -17,7 +18,11 @@
 	style:--themeTransparent="{theme}44"
 	style:--bg="url({background})"
 >
-	<div class="title">{title}</div>
+	{#if logo == undefined}
+		<div class="title">{title}</div>
+	{:else}
+		<img src={logo} alt={title} class="logo" />
+	{/if}
 	<div class="description">{description}</div>
 	<div class="cta">{cta}</div>
 </a>
@@ -43,6 +48,11 @@
 
 	.card:hover {
 		background-size: 110%;
+	}
+
+	.logo {
+		height: 5rem;
+		max-width: 100%;
 	}
 
 	.title {
