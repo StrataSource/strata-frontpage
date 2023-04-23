@@ -2,17 +2,21 @@
 	export let action: string | ((event: MouseEvent) => any);
 	export let variant: 'default' | 'secondary' | 'outline' | 'text' = 'default';
 
-	let fun: (event: MouseEvent) => any;
+	let target = '_self';
 
-	if (typeof action == 'function') {
-		fun = action;
+	if (
+		typeof action == 'string' &&
+		action.startsWith('https://') &&
+		!action.includes('stratasource.org')
+	) {
+		target = '_blank';
 	}
 </script>
 
 {#if typeof action == 'string'}
-	<a href={action} class={variant}><slot /></a>
+	<a href={action} {target} class={variant}><slot /></a>
 {:else}
-	<button on:click={fun} class={variant}><slot /></button>
+	<button on:click={action} class={variant}><slot /></button>
 {/if}
 
 <style lang="scss">
@@ -25,7 +29,7 @@
 		display: inline-block;
 		cursor: pointer;
 		transition: 250ms;
-        text-decoration: none;
+		text-decoration: none;
 	}
 
 	.default {
