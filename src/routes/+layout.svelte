@@ -10,11 +10,13 @@
 	import Spinner from '$lib/components/Spinner.svelte';
 	import { navigating } from '$app/stores';
 	import MainContainer from '$lib/components/MainContainer.svelte';
+	import { onMount } from 'svelte';
 
-	let loader: HTMLElement;
+	let windowLoading = true;
+	onMount(() => window.addEventListener('load', () => (windowLoading = false)));
 </script>
 
-<div class="loader" bind:this={loader} class:hidden={!$navigating}>
+<div class="loader" class:hidden={!(windowLoading || $navigating)}>
 	<Spinner />
 </div>
 
