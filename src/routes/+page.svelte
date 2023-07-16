@@ -56,11 +56,11 @@
 			a process of delving deep into the many layers of the engine and modernizing, refactoring, refining
 			and demolishing various sections. So, we felt the analogy to geology and mining was apt!
 		</p>
-		<h2>How does licensing work?</h2>
+		<h2>How do I use Strata for my licensed project?</h2>
 		<p>
-			All contributors to Strata Source must have licensed access to Source 1 from Valve. We are
-			happy for developers to use our code in any way they see fit, but to gain access you must have
-			a license (NDA) from Valve. We have no say whatsoever in who gets licensed, nor can we offer
+			All contributors to Strata Source must have licensed access to CS:GO's branch of Source 1 from Valve.
+			We are happy for developers to use our code in any way they see fit, but to gain access you must have
+			a valid license (NDA) from Valve. We have no say whatsoever in who gets licensed, nor can we offer
 			any kind of legal advice in order to be licensed.
 		</p>
 		<h2>Why not Source 2?</h2>
