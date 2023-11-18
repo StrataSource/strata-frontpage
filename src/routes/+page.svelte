@@ -1,5 +1,9 @@
 <script>
+	import LinkCard from '$lib/components/LinkCard.svelte';
 	import Meta from '$lib/components/Meta.svelte';
+	import { BrandColors } from '$lib/types';
+
+	import p2ceBG from '$lib/images/backgrounds/p2.jpg';
 </script>
 
 <Meta description="Introducing Strata Source, a game changer for Source modding" />
@@ -15,6 +19,15 @@
 	<div class="graphics">
 		<div class="portal2-background" />
 	</div>
+</div>
+
+<div class="games">
+	<LinkCard
+		theme={BrandColors.P2CE}
+		background={p2ceBG}
+		href="https://portal2communityedition.com"
+		description="Portal 2, but gooder">Test</LinkCard
+	>
 </div>
 
 <div id="faq" class="faq">
