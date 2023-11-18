@@ -4,6 +4,10 @@
 	import { BrandColors } from '$lib/types';
 
 	import p2ceBG from '$lib/images/backgrounds/p2.jpg';
+	import p2ceLogo from '$lib/images/logos/p2ce_full_mw.svg';
+
+	import momentumBG from '$lib/images/backgrounds/momentum.png';
+	import momentumLogo from '$lib/images/logos/momentum_full_mw.svg';
 </script>
 
 <Meta description="Introducing Strata Source, a game changer for Source modding" />
@@ -26,7 +30,15 @@
 		theme={BrandColors.P2CE}
 		background={p2ceBG}
 		href="https://portal2communityedition.com"
-		description="Portal 2, but gooder">Test</LinkCard
+		description="Portal 2, but gooder"
+		logo={p2ceLogo}>Test</LinkCard
+	>
+	<LinkCard
+		theme={BrandColors.MOMENTUM}
+		background={momentumBG}
+		href="https://momentum-mod.org"
+		description="Source, but fast"
+		logo={momentumLogo}>Test</LinkCard
 	>
 </div>
 
