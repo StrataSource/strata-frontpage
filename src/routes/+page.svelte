@@ -31,15 +31,22 @@
 		background={p2ceBG}
 		href="https://portal2communityedition.com"
 		description="Portal 2, but gooder"
-		logo={p2ceLogo}>Test</LinkCard
-	>
+		logo={p2ceLogo}
+	/>
 	<LinkCard
 		theme={BrandColors.MOMENTUM}
 		background={momentumBG}
 		href="https://momentum-mod.org"
 		description="Source, but fast"
-		logo={momentumLogo}>Test</LinkCard
-	>
+		logo={momentumLogo}
+	/>
+	<LinkCard
+		theme={BrandColors.STRATA}
+		background={p2ceBG}
+		href="https://store.steampowered.com/app/601360/Portal_Revolution/"
+		description="Placeholder for Revo"
+		logo={momentumLogo}
+	/>
 </div>
 
 <div id="faq" class="faq">
@@ -166,6 +173,13 @@
 		}
 	}
 
+	.games {
+		padding-top: 2rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 0.5rem;
+	}
+
 	.faq {
 		$padding-inline: 6rem;
 		$polygon-height: 2rem;
@@ -255,6 +269,11 @@
 				}
 			}
 		}
+
+		.games{
+			grid-template-columns: 1fr;
+		}
+
 		.faq {
 			width: 100%;
 			margin-top: 8rem;
