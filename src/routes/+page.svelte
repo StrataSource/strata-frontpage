@@ -39,23 +39,6 @@
 			on top of Strata. Lastly, wherever we can open source our software freely, we do so, releasing
 			all non-engine related code under the permissible MIT license.
 		</p>
-		<h2>Wasn't your previous name “Chaos”?</h2>
-		<p>
-			Yep! When the project started in 2020 it was under the name “Chaos Source” with contributors
-			organized under the umbrella of “Chaos Initiative” and the P2:CE team known as “Chaos
-			Studios”. This naming was chosen in very early days of the project, and while it was okay for
-			a time, in 2023 we decided to optimize our branding with input from a wider range of project
-			members and decided on <strong>Strata Source</strong>.
-		</p>
-		<h2>Where does your new name come from?</h2>
-		<p>
-			The name <em>Strata</em> comes from geology, referring to the rocky layers of a planet's crust.
-			The Source Engine is a huge codebase containing decades worth of code, from contemporary titles
-			such as CS:GO and Portal 2, going all the way back to the days of Quake. The engine therefore consists
-			of many layers of systems and features, and with it, many layers of tech debt. Our work is frequently
-			a process of delving deep into the many layers of the engine and modernizing, refactoring, refining
-			and demolishing various sections. So, we felt the analogy to geology and mining was apt!
-		</p>
 		<h2>Why not Source 2?</h2>
 		<p>
 			Elephant in the room: we don't have access to Source 2! So far Source 2 has had a limited
@@ -89,6 +72,25 @@
 			a sincere interest in the long-term maintenance of Source 1. There are numerous places where
 			more modern technologies can be implemented, the engine and its many bugs can be refined, and
 			piles of tech-debt to extract and demolish; we think this is a genuine worthwhile endeavor.
+		</p>
+
+		<h2>Where does your name come from?</h2>
+		<p>
+			The name <em>Strata</em> comes from geology, referring to the rocky layers of a planet's crust.
+			The Source Engine is a huge codebase containing decades worth of code, from contemporary titles
+			such as CS:GO and Portal 2, going all the way back to the days of Quake. The engine therefore consists
+			of many layers of systems and features, and with it, many layers of tech debt. Our work is frequently
+			a process of delving deep into the many layers of the engine and modernizing, refactoring, refining
+			and demolishing various sections. So, we felt the analogy to geology and mining was apt!
+		</p>
+
+		<h2>Wasn't your previous name “Chaos”?</h2>
+		<p>
+			Yep! When the project started in 2020 it was under the name “Chaos Source” with contributors
+			organized under the umbrella of “Chaos Initiative” and the P2:CE team known as “Chaos
+			Studios”. This naming was chosen in very early days of the project, and while it was okay for
+			a time, in 2023 we decided to optimize our branding with input from a wider range of project
+			members and decided on <strong>Strata Source</strong>.
 		</p>
 	</div>
 </div>
