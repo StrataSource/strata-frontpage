@@ -23,8 +23,10 @@
 	{:else}
 		<img src={logo} alt={title} class="logo" />
 	{/if}
-	<div class="description">{description}</div>
-	<div class="cta">{cta}</div>
+	<div>
+		<div class="description">{description}</div>
+		<div class="cta">{cta}</div>
+	</div>
 </a>
 
 <style lang="scss">
@@ -34,8 +36,11 @@
 		background-position: center;
 		background-size: 100%;
 
-		display: block;
+		display: flex;
+		flex-direction: column;
 		cursor: pointer;
+		align-items: start;
+		justify-content: space-between;
 
 		border-bottom: var(--theme) 0.2rem solid;
 

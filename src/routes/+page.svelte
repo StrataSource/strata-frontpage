@@ -30,14 +30,17 @@
 		theme={BrandColors.P2CE}
 		background={p2ceBG}
 		href="https://portal2communityedition.com"
-		description="Portal 2, but gooder"
+		description="The best way to
+		Play and Create
+		Portal community
+		content."
 		logo={p2ceLogo}
 	/>
 	<LinkCard
 		theme={BrandColors.MOMENTUM}
 		background={momentumBG}
 		href="https://momentum-mod.org"
-		description="Source, but fast"
+		description="Source movement speedrunning at its finest."
 		logo={momentumLogo}
 	/>
 	<LinkCard
@@ -270,7 +273,7 @@
 			}
 		}
 
-		.games{
+		.games {
 			grid-template-columns: 1fr;
 		}
 
