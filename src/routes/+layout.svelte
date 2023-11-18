@@ -18,8 +18,6 @@
 	<Spinner />
 </div>
 
-<MigrationBanner />
-
 <PageHeader />
 
 <MainContainer>
