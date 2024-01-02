@@ -33,7 +33,7 @@
 				<a class="link" href="/">Home</a>
 				<!--<a href="/news">News</a>-->
 				<!-- svelte-ignore security-anchor-rel-noreferrer -->
-				<a class="link" href="https://stratasource.github.io/Wiki/" target="_blank">Wiki</a>
+				<a class="link" href="https://wiki.stratasource.org" target="_blank">Wiki</a>
 
 				<div class="socials link">
 					<a href="https://github.com/StrataSource" target="_blank" rel="noreferrer"
