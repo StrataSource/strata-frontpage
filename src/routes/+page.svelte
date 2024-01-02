@@ -8,6 +8,10 @@
 
 	import momentumBG from '$lib/images/backgrounds/momentum.png';
 	import momentumLogo from '$lib/images/logos/momentum_full_mw.svg';
+
+
+	import revolutionBG from '$lib/images/backgrounds/revolution.jpg';
+	import revolutionLogo from '$lib/images/logos/revolution_full.svg';
 </script>
 
 <Meta description="Introducing Strata Source, a game changer for Source modding" />
@@ -42,13 +46,14 @@
 		href="https://momentum-mod.org"
 		description="Source movement speedrunning at its finest."
 		logo={momentumLogo}
+		logoPadding={1}
 	/>
 	<LinkCard
-		theme={BrandColors.STRATA}
-		background={p2ceBG}
-		href="https://store.steampowered.com/app/601360/Portal_Revolution/"
-		description="Placeholder for Revo"
-		logo={momentumLogo}
+		theme={BrandColors.REVOLUTION}
+		background={revolutionBG}
+		href="https://www.portalrevolution.com/"
+		description="All-encompassing story campaign mod for Portal 2"
+		logo={revolutionLogo}
 	/>
 </div>
 
