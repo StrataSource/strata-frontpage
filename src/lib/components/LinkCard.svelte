@@ -6,6 +6,7 @@
 	export let href: string;
 	export let title: string = '';
 	export let logo: string | undefined = undefined;
+	export let logoPadding: number = 0;
 	export let description: string;
 	export let cta = 'Learn more';
 </script>
@@ -21,7 +22,7 @@
 	{#if logo == undefined}
 		<div class="title">{title}</div>
 	{:else}
-		<img src={logo} alt={title} class="logo" />
+		<img src={logo} alt={title} class="logo" style:padding="{logoPadding}em 0" />
 	{/if}
 	<div>
 		<div class="description">{description}</div>
@@ -58,6 +59,8 @@
 	.logo {
 		height: 5rem;
 		max-width: 100%;
+
+		filter: grayscale(1) brightness(99);
 	}
 
 	.title {
