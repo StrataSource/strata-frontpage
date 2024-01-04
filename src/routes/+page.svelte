@@ -9,7 +9,6 @@
 	import momentumBG from '$lib/images/backgrounds/momentum.png';
 	import momentumLogo from '$lib/images/logos/momentum_full_mw.svg';
 
-
 	import revolutionBG from '$lib/images/backgrounds/revolution.jpg';
 	import revolutionLogo from '$lib/images/logos/revolution_full.svg';
 </script>
@@ -34,26 +33,22 @@
 		theme={BrandColors.P2CE}
 		background={p2ceBG}
 		href="https://portal2communityedition.com"
-		description="The best way to
-		Play and Create
-		Portal community
-		content."
-		logo={p2ceLogo}
+		title="Portal 2: Community Edition"
+		description="The best way to Play and Create Portal community content."
 	/>
 	<LinkCard
 		theme={BrandColors.MOMENTUM}
 		background={momentumBG}
 		href="https://momentum-mod.org"
+		title="Momentum Mod"
 		description="Source movement speedrunning at its finest."
-		logo={momentumLogo}
-		logoPadding={1}
 	/>
 	<LinkCard
 		theme={BrandColors.REVOLUTION}
 		background={revolutionBG}
 		href="https://www.portalrevolution.com/"
-		description="All-encompassing story campaign mod for Portal 2"
-		logo={revolutionLogo}
+		title="Portal: Revolution"
+		description="All-encompassing story campaign mod for Portal 2."
 	/>
 </div>
 
