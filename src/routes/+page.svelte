@@ -6,7 +6,7 @@
 	import p2ceBG from '$lib/images/backgrounds/p2.jpg';
 	import p2ceLogo from '$lib/images/logos/p2ce_full_mw.svg';
 
-	import momentumBG from '$lib/images/backgrounds/momentum.png';
+	import momentumBG from '$lib/images/backgrounds/momentum.jpg';
 	import momentumLogo from '$lib/images/logos/momentum_full_mw.svg';
 
 	import revolutionBG from '$lib/images/backgrounds/revolution.jpg';
