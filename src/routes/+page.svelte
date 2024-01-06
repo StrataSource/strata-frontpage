@@ -33,7 +33,7 @@
 		theme={BrandColors.P2CE}
 		background={p2ceBG}
 		href="https://portal2communityedition.com"
-		title="Portal 2: Community Edition"
+		title="Portal 2: CE"
 		description="The best way to Play and Create Portal community content."
 	/>
 	<LinkCard
