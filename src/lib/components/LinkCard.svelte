@@ -68,6 +68,10 @@
 		margin-bottom: 0.5rem;
 	}
 
+	.description {
+		text-wrap: balance;
+	}
+
 	.cta {
 		border: 0.1rem white solid;
 		padding: 0.25rem;
