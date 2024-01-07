@@ -23,6 +23,7 @@
 					target="_blank"
 					rel="noreferrer">Qt Source Code</a
 				>
+				<a href="mailto:team@stratasource.org">Contact</a>
 			</nav>
 			<nav class="socials">
 				<a href="https://github.com/StrataSource" target="_blank" rel="noreferrer"
