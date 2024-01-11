@@ -67,12 +67,20 @@
 			Strata Source, with three licensed projects using the engine.
 		</p>
 		<p>
-			The aim of Strata is to foster an open and sharing community for all Source Engine licensees.
-			Whilst licensing restrictions mean the engine code must be kept strictly private — all
-			developers must have signed prior legal agreements with Valve — we encourage usage of our code
-			and accept contributions by any interested licensed developer, even those not directly built
-			on top of Strata. Lastly, wherever we can open source our software freely, we do so, releasing
-			all non-engine related code under the permissible MIT license.
+			Source is a closed-source engine, and historically speaking Source 1 game developers have been
+			isolated from one another. This has led to a lot of overlapping work, which is especially
+			unfortunate given that we're typically not-for-profit projects, working in our free time.
+			The aim of Strata is to foster more open communication between licensed projects and share engine
+			changes where possible. To be clear, we <i>only</i> work with existing licensees.
+		</p>
+		<h2>We have nothing to do with Source licensing.</h2>
+		<p>
+			This isn't a question, we just want to make it 100% clear. Valve provide a very clear
+			explanation of the Source 1 licensing situation <a
+				href="https://partner.steamgames.com/doc/sdk/uploading/distributing_source_engine"
+				>on the Steamworks documentation</a
+			>, we don't have anything to add. We have no say whatsoever in who gets licensed, nor can we
+			offer any kind of advice (legal or otherwise) related to licensing.
 		</p>
 		<h2>Why not Source 2?</h2>
 		<p>
@@ -103,10 +111,10 @@
 			backported to Source 1 for CS:GO, and have gotten an enormous amount of use out of it.
 		</p>
 		<p>
-			While Source 2 is clearly modernized and the engine has a lot of impressive features, we have
+			Source 2 is clearly modernized and the engine has a lot of impressive features, but we have
 			a sincere interest in the long-term maintenance of Source 1. There are numerous places where
 			more modern technologies can be implemented, the engine and its many bugs can be refined, and
-			piles of tech-debt to extract and demolish; we think this is a genuine worthwhile endeavor.
+			piles of tech-debt to extract and demolish; we think this is a worthwhile endeavor!
 		</p>
 
 		<h2>Where does your name come from?</h2>
