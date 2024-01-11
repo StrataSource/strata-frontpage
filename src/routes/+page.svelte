@@ -196,7 +196,7 @@
 		$polygon-height: 2rem;
 		$title-offset: 3rem;
 		grid-column: 1 / -1;
-		margin-top: 5rem;
+		margin-top: 12rem;
 		margin-bottom: 2rem;
 		width: 80%;
 		margin-inline: auto;
