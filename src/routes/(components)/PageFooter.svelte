@@ -17,7 +17,6 @@
 		</div>
 		<div class="inner">
 			<nav>
-				<a href="/">Home</a>
 				<a
 					href="https://github.com/StrataSource/qtbase/archive/refs/heads/chaos.zip"
 					target="_blank"

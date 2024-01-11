@@ -30,8 +30,6 @@
 
 		<div>
 			<nav class:active={nav}>
-				<a class="link" href="/">Home</a>
-				<!--<a href="/news">News</a>-->
 				<!-- svelte-ignore security-anchor-rel-noreferrer -->
 				<a class="link" href="https://wiki.stratasource.org" target="_blank">Wiki</a>
 
