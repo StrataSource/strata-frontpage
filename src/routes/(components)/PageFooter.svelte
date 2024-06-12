@@ -13,7 +13,7 @@
 					alt="Strata"
 				/>
 			</a>
-			<div>©2023 Strata Source</div>
+			<div>©2024 Strata Source</div>
 		</div>
 		<div class="inner">
 			<nav>
