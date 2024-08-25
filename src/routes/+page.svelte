@@ -16,16 +16,10 @@
 <Meta description="Introducing Strata Source, a game changer for Source modding" />
 
 <div class="hero">
-	<div class="text">
-		<h1>Introducing<br />Strata Source</h1>
-		<p>
-			A community-made branch of the Source engine emphasing modern features and development
-			practices
-		</p>
-	</div>
-	<div class="graphics">
-		<div class="portal2-background" />
-	</div>
+	<img
+		src="https://branding.stratasource.org/i/strata-source/logo/ondark/color.svg"
+		alt="Strata Source Logo"
+	/>
 </div>
 
 <div class="games">
@@ -141,126 +135,41 @@
 <style lang="scss">
 	.hero {
 		grid-column: 1 / -1;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+		display: flex;
 		gap: 50px;
 		align-items: center;
-		min-height: 60vh;
+		justify-content: center;
+		padding: 2rem 0;
 
-		& .text {
-			display: flex;
-			flex-direction: column;
-			gap: 15px;
-
-			& h1 {
-				font-size: 48px;
-			}
-			& p {
-				font-size: 20px;
-				color: rgba(255, 255, 255, 0.4);
-				line-height: 1.5em;
-			}
-		}
-
-		& .graphics {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-
-			& .portal2-background {
-				width: 80%;
-				height: 80%;
-				background: url('$lib/images/backgrounds/blend.jpg');
-				background-position: center;
-				background-size: cover;
-				aspect-ratio: 1 / 1;
-				-webkit-mask-image: url('https://branding.stratasource.org/i/strata/icon/ondark/mono.svg');
-				-webkit-mask-repeat: no-repeat;
-				-webkit-mask-position: center;
-				mask-image: url('https://branding.stratasource.org/i/strata/icon/ondark/mono.svg');
-				mask-repeat: no-repeat;
-				mask-position: center;
-			}
+		> img {
+			width: 50%;
 		}
 	}
 
 	.games {
-		padding-top: 2rem;
+		margin-top: 2rem;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 0.5rem;
 	}
 
 	.faq {
-		$padding-inline: 6rem;
-		$polygon-height: 2rem;
-		$title-offset: 3rem;
 		grid-column: 1 / -1;
-		margin-top: 12rem;
+		margin-top: 1rem;
 		margin-bottom: 2rem;
-		width: 80%;
 		margin-inline: auto;
-		padding-inline: $padding-inline;
-		padding-bottom: 3rem;
-		position: relative;
-		font-size: 1.1em;
-
-		&::before {
-			content: '';
-			position: absolute;
-			z-index: -1;
-			inset: 0;
-			background-color: #a32b2b;
-			clip-path: polygon(0 $polygon-height, 100% 0, 100% 100%, 0 100%);
-		}
-
-		& .title {
-			font-weight: 1000;
-			font-size: 8rem;
-			transform: translateY(#{-$title-offset});
-			margin-bottom: -$title-offset;
-			color: transparent;
-
-			& > * {
-				position: absolute;
-				inset: 0;
-			}
-
-			& span {
-				color: white;
-				pointer-events: none;
-				user-select: none;
-
-				&:not(.tint) {
-					clip-path: polygon(
-						0 0,
-						100% 0,
-						calc(100% + #{$padding-inline}) $title-offset,
-						-$padding-inline $title-offset + $polygon-height
-					);
-				}
-
-				&.tint {
-					color: rgb(236, 174, 174);
-				}
-			}
-		}
 
 		& h2 {
-			font-size: 2.5rem;
-			margin-top: 3rem;
-			margin-bottom: 1rem;
-			margin-inline: 4rem;
-			text-align: center;
+			color: #f0413c;
+			font-size: 2rem;
+			margin-top: 2.5rem;
 		}
 
 		& p {
-			font-size: 1.1rem;
-			margin: 1rem 0;
+			margin: 0.5rem 0;
 			font-weight: 300;
 			line-height: 1.4rem;
 			text-align: justify;
-			text-indent: 0.5rem;
 		}
 
 		& a {
@@ -271,13 +180,10 @@
 
 	@media only screen and (max-width: 768px) {
 		.hero {
-			grid-template-columns: 1fr;
-			gap: 16px;
+			padding: 0 0 1rem 0;
 
-			& .graphics {
-				& .portal2-background {
-					max-height: 300px;
-				}
+			img {
+				width: 100%;
 			}
 		}
 
@@ -287,39 +193,11 @@
 
 		.faq {
 			width: 100%;
-			margin-top: 8rem;
 			margin-bottom: 0;
-			padding-bottom: 1rem;
-
-			$padding-inline: 1rem;
-			$polygon-height: 1.5rem;
-			$title-offset: 3.5rem;
-
-			padding-inline: $padding-inline;
-
-			&::before {
-				clip-path: polygon(0 $polygon-height, 100% 0, 100% 100%, 0 100%);
-			}
-
-			& .title {
-				$offset: 3rem;
-				transform: translateY(#{-$title-offset});
-				margin-bottom: -$title-offset;
-
-				& span:not(.tint) {
-					clip-path: polygon(
-						0 0,
-						100% 0,
-						calc(100% + #{$padding-inline}) $title-offset,
-						-$padding-inline $title-offset + $polygon-height
-					);
-				}
-			}
+			padding-bottom: 0;
 
 			& h2 {
 				font-size: 2rem;
-
-				margin-inline: 1rem;
 			}
 
 			& p {

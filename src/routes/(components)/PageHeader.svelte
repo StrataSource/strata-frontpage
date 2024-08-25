@@ -15,15 +15,6 @@
 
 <header>
 	<MainContainer>
-		<div class="logo-wrapper">
-			<a href="/">
-				<img
-					src="https://branding.stratasource.org/i/strata-source/logo/ondark/color.svg"
-					alt="Strata Source Logo"
-				/>
-			</a>
-		</div>
-
 		<button class="menu-opener" on:click={() => (nav = !nav)}>
 			<span bind:this={navIcon} class="mdi" class:mdi-menu={!nav} class:mdi-close={nav} />
 		</button>
@@ -47,8 +38,8 @@
 </header>
 
 <style lang="scss">
-	.logo-wrapper {
-		width: fit-content;
+	header {
+		padding: 2rem;
 	}
 
 	img {
@@ -56,7 +47,7 @@
 	}
 
 	.menu-opener {
-		font-size: 1rem;
+		margin-left: auto;
 		color: white;
 		background: none;
 		border: none;
@@ -68,6 +59,7 @@
 
 	nav {
 		display: flex;
+		justify-content: right;
 		gap: 1rem;
 
 		& .socials {
@@ -97,6 +89,10 @@
 	}
 
 	@media only screen and (max-width: 700px) {
+		header {
+			padding: 1rem 0 1rem 0;
+		}
+		
 		.menu-opener {
 			display: block;
 		}
