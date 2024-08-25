@@ -9,7 +9,6 @@
 		grid-template-columns: 1fr auto;
 		width: calc(100% - 50px);
 		max-width: 1140px;
-		padding-block: 2rem;
 		align-items: center;
 	}
 </style>
