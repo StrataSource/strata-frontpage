@@ -13,7 +13,7 @@
 					alt="Strata"
 				/>
 			</a>
-			<div>©2024 Strata Source</div>
+			<div>©{new Date().getFullYear()} Strata Source</div>
 		</div>
 		<div class="inner">
 			<nav>
